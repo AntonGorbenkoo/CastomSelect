@@ -1,0 +1,98 @@
+.wrapper {
+  width: 250px;
+  margin: 130px auto 0;
+}
+
+.selectBtn {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 13px;
+  background-color: black;
+  border: 1px solid #202020;
+  border-radius: 10px;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.selectBtn:hover {
+  border: 1px solid greenyellow;
+  transition: border 0.3s ease-in-out;
+}
+
+.selectBtn .selectIcon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.wrapper.active .selectIcon {
+  transform: rotate(-180deg);
+}
+
+.selectChoice {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  display: none;
+  margin: 15px 0px 0px 0px;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper.active .content {
+  display: block;
+}
+
+.content .options {
+  padding: 8px 0 0 0;
+  max-height: 250px;
+  overflow-y: scroll;
+  color: #fff;
+}
+
+.options::-webkit-scrollbar {
+  width: 6px;
+}
+
+.options::-webkit-scrollbar-track {
+  background-color: black;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.options::-webkit-scrollbar-thumb {
+  background-color: #33ad5e;
+  border-radius: 48px;
+}
+
+.options li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 14px 15px 14px;
+  margin: 0px 8px 0px 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  list-style: none;
+  /* color: #fff; */
+}
+
+.options li:hover {
+  background-color: #202020;
+  color: #33ad5e;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.optionLeft {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+.optionImg {
+  width: 24px;
+  height: 24px;
+  margin: 0 8px 0 0;
+}
